@@ -1,6 +1,7 @@
 .page {
   font-family: var(--main-font), Arial, sans-serif;
   color: var(--text-color);
+  background-color: var(--bg-color);
   background-image: var(--cover-image-theme);
   background-position: center;
   background-size: cover;
@@ -341,7 +342,7 @@
   .how {
     column-gap: 20px;
   }
-  
+
   .what .content__section-card {
     grid-row-start: initial;
     grid-column-end: span 3;
