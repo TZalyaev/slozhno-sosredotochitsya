@@ -226,8 +226,6 @@
 
 .how .content__section-card {
   grid-column-start: 2;
-  grid-column-end: span 3;
-  margin-left: 5px;
 }
 
 .advices-list {
@@ -304,16 +302,18 @@
   }
   .header__theme-menu {
     justify-self: end;
-    align-self: flex-end;
+    align-self: start;
+    margin-top: 22.4vw;
   }
   .header__accent {
     width: 100%
   }
-  .header {
-    padding: 10px;
-    margin-bottom: 40px;
+  .header__subtitle {
+    margin-top: 6.4vw;
   }
-
+  .why {
+    column-gap: 20px;
+  }
   .what .content__section-card {
     grid-row-start: initial;
   }
@@ -327,6 +327,10 @@
   .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-left: 0;
+  }
+  .header {
+    padding: 10px;
+    margin-bottom: 40px;
   }
   .header__subtitle {
     width: 100%;
