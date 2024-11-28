@@ -338,10 +338,6 @@
 
   .what .content__section-card {
     grid-row-start: initial;
-  }
-
-  .what .content__section-card {
-    grid-row-start: initial;
     grid-column-end: span 3;
   }
 }
