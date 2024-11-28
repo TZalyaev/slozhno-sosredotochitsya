@@ -13,9 +13,10 @@
       --cover-image-theme: url("/images/cover-image-dark.png");
       --decoration-outline-color: var(--accent-color);  
       --decoration-outline-color-semi-transparent: #FF007066;
-      --rec-visibility: visible
+      --rec-visibility: visible;
     }
 }
+
 .page.theme_dark{
   --accent-color: #FF0070;
   --title-color:#DB00FF;
@@ -25,5 +26,5 @@
   --cover-image-theme: url("/images/cover-image-dark.png");
   --decoration-outline-color: var(--accent-color);
   --decoration-outline-color-semi-transparent: #FF007066;
-  --rec-visibility: visible
+  --rec-visibility: visible;
 }
