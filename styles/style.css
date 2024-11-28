@@ -1,6 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  background-color: var(--bg-color);
   font-family: var(--main-font), Arial, sans-serif;
   color: var(--text-color);
   background-image: var(--cover-image-theme);
@@ -10,10 +8,13 @@
   opacity: 1;
   background-attachment: fixed;
 }
+
 .decorated-zone {
   height: 100vh;
   width: 100vw;
+  min-height: 668px;
 }
+
 .header {
   padding: var(--header-padding);
   position: relative;
@@ -225,7 +226,7 @@
 .how {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
-  column-gap: 20px;
+  column-gap: 10px;
 }
 
 .how .content__section-title {
@@ -268,6 +269,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .sunset {
@@ -336,6 +338,10 @@
     column-gap: 20px;
   }
 
+  .how {
+    column-gap: 20px;
+  }
+  
   .what .content__section-card {
     grid-row-start: initial;
     grid-column-end: span 3;
