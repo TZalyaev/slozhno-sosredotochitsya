@@ -1,7 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  min-inline-size: 375px;
-  margin: 0 auto 0 auto;
   background-color: var(--bg-color);
   font-family: var(--main-font), Arial, sans-serif;
   color: var(--text-color);
@@ -23,7 +21,7 @@
   grid-template-rows: repeat(3, 1fr);
   margin-bottom: 60px;
 }
-.header::before {
+.decorated-zone::before {
   content: '';
   width: 25px;
   height: 25px;
@@ -33,7 +31,7 @@
   bottom: var(--header-padding);
   left: var(--header-padding);
 }
-.header::after {
+.decorated-zone::after {
   content: '';
   width: 25px;
   height: 25px;
@@ -66,12 +64,15 @@
   visibility: var(--rec-visibility);
 }
 .header__title {
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  color: var(--title-color);
-  text-shadow: 4px 4px var(--accent-color);
   margin-left: -20px;
   margin-bottom: 11.1vw;
   line-height: 82.5%;
+}
+.decorated-zone-title {
+  line-height: 82.5%;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: var(--title-color);
+  text-shadow: 4px 4px var(--accent-color);
 }
 
 .title-decor {
@@ -87,7 +88,6 @@
   justify-self:end;
   height: fit-content;
   align-self: start;
-
 }
 
 .header__theme-menu {
@@ -201,6 +201,57 @@
   margin-bottom: 10px;
 }
 
+.pictures {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+.pictures .content__section-title {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sunset {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-column-end: span 2;
+}
+
+.icecream {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+.tape {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: span 2;
+}
+.books {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: span 1;
+}
+.street {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  grid-column-end: span 2;
+}
+.footer {
+  padding:var(--header-padding);
+  position: relative;
+  display: flex;
+}
+.footer__title {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
 @media (max-width: 768px) {
   .header__theme-menu-list {
       flex-direction: column;
@@ -231,6 +282,9 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-left: 0;
   }
+  .header__subtitle {
+    width: 100%;
+  }
   :root {
     --header-padding:10px;
     --content-gap: 50px;
@@ -240,7 +294,7 @@
     grid-template-rows: auto;
   }
   .why .content__section-card {
-    grid-column-start: 1;
+    grid-column-start: initial;
   }
   .what {
     grid-template-columns: 1fr;
@@ -255,6 +309,41 @@
   }
   .how .content__section-card {
     grid-column-start: initial;
+    grid-column-end: initial;
+  }
+  .pictures {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .pictures .content__section-title{
+    grid-column-start: initial;
+    grid-column-end: initial;
+  }
+  .sunset {
+    grid-column-start: initial;
+    grid-row-start: initial;
+    grid-column-end: initial;
+  }
+  
+  .icecream {
+    grid-column-start: initial;
+    grid-row-start: initial;
+    grid-row-end: initial;
+  }
+  .tape {
+    grid-column-start: initial;
+    grid-column-end: initial;
+    grid-row-start: initial;
+    grid-row-end: initial;
+  }
+  .books {
+    grid-column-start: initial;
+    grid-row-start: initial;
+    grid-row-end: initial;
+  }
+  .street {
+    grid-column-start: initial;
+    grid-row-start: initial;
     grid-column-end: initial;
   }
 } 
