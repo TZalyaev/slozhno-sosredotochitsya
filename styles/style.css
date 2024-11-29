@@ -8,12 +8,19 @@
   background-repeat: no-repeat;
   opacity: 1;
   background-attachment: fixed;
+  min-width: 375px;
+  max-width: 1024px;
+  min-height: 668px;
+  max-height: 1024px;
 }
 
 .decorated-zone {
   height: 100vh;
   width: 100vw;
+  min-width: 375px;
+  max-width: 1024px;
   min-height: 668px;
+  max-height: 1024px;
 }
 
 .header {
@@ -131,14 +138,14 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--decoration-outline-color);
+  border-bottom: 1px solid currentColor;
 }
 .header__theme-menu-button:hover {
   border: 1px solid var(--decoration-outline-color-semi-transparent);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--decoration-outline-color);
+  border: 1px solid currentColor;
   pointer-events: none;
 }
 
@@ -193,11 +200,11 @@
 }
 
 .content__section-card-text-link:any-link:focus-visible {
-  border: 1px solid var(--text-color);
+  border: 1px solid currentColor;
 }
 
 .content__section-card-text-link:any-link:hover {
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid currentColor;
 }
 
 .why {
