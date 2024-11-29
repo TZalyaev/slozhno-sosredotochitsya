@@ -229,9 +229,8 @@
 .what .content__section-title {
   grid-row-start: 1;
   grid-column-end: span 3;
-  width: calc((100% - 40px)/3);
+  width: calc((100% - 40px) / 3);
 }
-
 
 .how {
   grid-template-columns: 1fr 2fr;
@@ -256,7 +255,7 @@
 .advices-list__item {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
 }
 .advices-list__item-title {
   font-weight: 400;
